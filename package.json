@@ -1,0 +1,10 @@
+{
+  "name": "waline",
+  "version": "0.0.0",
+  "dependencies": {
+    "@waline/vercel": "0.22.6",
+    "@waline/cloudbase": "1.0.20",
+    "@waline/client": "0.14.3",
+    "@waline/admin": "0.7.2"
+  }
+}
