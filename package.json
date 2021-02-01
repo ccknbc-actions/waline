@@ -6,7 +6,7 @@
     "@waline/cloudbase": "1.0.20",
     "@waline/client": "0.14.3",
     "@waline/admin": "0.7.2",
-    "snyk": "1.440.3"
+    "snyk": "1.440.4"
   },
   "scripts": {
     "snyk-protect": "snyk protect",
