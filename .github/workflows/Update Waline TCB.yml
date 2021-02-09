@@ -2,6 +2,7 @@ name: Update Waline TCB
 
 on: 
   workflow_dispatch:
+  repository_dispatch:
   push:
     branches: main
 
