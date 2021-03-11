@@ -19,6 +19,8 @@ module.exports = Waline({
     'ccknbc.github.io',
     'ccknbc.gitee.io',
     'blog.ccknbc.cc'
+    'blog.imzjw.cn'
+    'imzjw.cn'
   ],
   mailSubject: '{{parent.nick}}，您在{{site.name}}上发表的评论,收到了来自{{self.nick}}的回复',
   mailSubjectAdmin: '{{site.name}}上收到了来自{{self.nick}}的留言',
