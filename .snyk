@@ -1,0 +1,70 @@
+# Snyk (https://snyk.io) policy file, patches or ignores known vulnerabilities.
+version: v1.25.0
+ignore: {}
+# patches apply the minimum changes required to fix a vulnerability
+patch:
+  'npm:ms:20170412':
+    - '@waline/vercel > think-helper > ms':
+        patched: '2022-08-29T15:50:12.272Z'
+    - '@waline/vercel > think-model > think-helper > ms':
+        patched: '2022-08-29T15:50:12.272Z'
+    - '@waline/vercel > think-model-mysql > think-helper > ms':
+        patched: '2022-08-29T15:50:12.272Z'
+    - '@waline/vercel > think-model-postgresql > think-helper > ms':
+        patched: '2022-08-29T15:50:12.272Z'
+    - '@waline/vercel > think-model-sqlite > think-helper > ms':
+        patched: '2022-08-29T15:50:12.272Z'
+    - '@waline/vercel > think-mongo > think-helper > ms':
+        patched: '2022-08-29T15:50:12.272Z'
+    - '@waline/vercel > thinkjs > think-helper > ms':
+        patched: '2022-08-29T15:50:12.272Z'
+    - '@waline/vercel > think-model > think-cache > think-helper > ms':
+        patched: '2022-08-29T15:50:12.272Z'
+    - '@waline/vercel > think-model > think-model-abstract > think-helper > ms':
+        patched: '2022-08-29T15:50:12.272Z'
+    - '@waline/vercel > think-model-mysql > think-model-abstract > think-helper > ms':
+        patched: '2022-08-29T15:50:12.272Z'
+    - '@waline/vercel > think-model-postgresql > think-model-abstract > think-helper > ms':
+        patched: '2022-08-29T15:50:12.272Z'
+    - '@waline/vercel > think-model-sqlite > think-model-abstract > think-helper > ms':
+        patched: '2022-08-29T15:50:12.272Z'
+    - '@waline/vercel > think-model-postgresql > think-instance > think-helper > ms':
+        patched: '2022-08-29T15:50:12.272Z'
+    - '@waline/vercel > think-model-sqlite > think-instance > think-helper > ms':
+        patched: '2022-08-29T15:50:12.272Z'
+    - '@waline/vercel > think-mongo > think-instance > think-helper > ms':
+        patched: '2022-08-29T15:50:12.272Z'
+    - '@waline/vercel > think-model-mysql > think-mysql > think-helper > ms':
+        patched: '2022-08-29T15:50:12.272Z'
+    - '@waline/vercel > thinkjs > think-cluster > think-helper > ms':
+        patched: '2022-08-29T15:50:12.272Z'
+    - '@waline/vercel > thinkjs > think-config > think-helper > ms':
+        patched: '2022-08-29T15:50:12.272Z'
+    - '@waline/vercel > thinkjs > think-controller > think-helper > ms':
+        patched: '2022-08-29T15:50:12.272Z'
+    - '@waline/vercel > thinkjs > think-mock-http > think-helper > ms':
+        patched: '2022-08-29T15:50:12.272Z'
+    - '@waline/vercel > thinkjs > think-crontab > think-helper > ms':
+        patched: '2022-08-29T15:50:12.272Z'
+    - '@waline/vercel > thinkjs > think-loader > think-helper > ms':
+        patched: '2022-08-29T15:50:12.272Z'
+    - '@waline/vercel > thinkjs > think-logic > think-helper > ms':
+        patched: '2022-08-29T15:50:12.272Z'
+    - '@waline/vercel > thinkjs > think-meta > think-helper > ms':
+        patched: '2022-08-29T15:50:12.272Z'
+    - '@waline/vercel > thinkjs > think-payload > think-helper > ms':
+        patched: '2022-08-29T15:50:12.272Z'
+    - '@waline/vercel > thinkjs > think-resource > think-helper > ms':
+        patched: '2022-08-29T15:50:12.272Z'
+    - '@waline/vercel > thinkjs > think-router > think-helper > ms':
+        patched: '2022-08-29T15:50:12.272Z'
+    - '@waline/vercel > thinkjs > think-trace > think-helper > ms':
+        patched: '2022-08-29T15:50:12.272Z'
+    - '@waline/vercel > thinkjs > think-validator > think-helper > ms':
+        patched: '2022-08-29T15:50:12.272Z'
+    - '@waline/vercel > think-model-mysql > think-mysql > think-instance > think-helper > ms':
+        patched: '2022-08-29T15:50:12.272Z'
+    - '@waline/vercel > thinkjs > think-crontab > think-cluster > think-helper > ms':
+        patched: '2022-08-29T15:50:12.272Z'
+    - '@waline/vercel > thinkjs > think-crontab > think-mock-http > think-helper > ms':
+        patched: '2022-08-29T15:50:12.272Z'
