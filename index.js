@@ -1,6 +1,6 @@
-const Waline = require('@waline/vercel');
+const Application= require('@waline/vercel');
 
-module.exports = Waline({
+module.exports = Application({
   forbiddenWords: [
     '习近平',
     '毛泽东',

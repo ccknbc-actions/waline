@@ -1,8 +1,7 @@
 {
-  "name": "waline",
+  "name": "template",
   "version": "0.0.0",
   "dependencies": {
-    "@waline/vercel": "1.19.3",
-    "think-model-mysql": "1.1.7"
+    "@waline/vercel": "1.19.3"
   }
 }
