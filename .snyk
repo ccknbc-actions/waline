@@ -1,0 +1,14 @@
+# Snyk (https://snyk.io) policy file, patches or ignores known vulnerabilities.
+version: v1.25.0
+ignore: {}
+# patches apply the minimum changes required to fix a vulnerability
+patch:
+  'npm:ms:20170412':
+    - think-model-mysql > think-helper > ms:
+        patched: '2022-08-29T15:45:00.324Z'
+    - think-model-mysql > think-model-abstract > think-helper > ms:
+        patched: '2022-08-29T15:45:00.324Z'
+    - think-model-mysql > think-mysql > think-helper > ms:
+        patched: '2022-08-29T15:45:00.324Z'
+    - think-model-mysql > think-mysql > think-instance > think-helper > ms:
+        patched: '2022-08-29T15:45:00.324Z'

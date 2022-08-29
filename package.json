@@ -3,6 +3,12 @@
   "version": "0.0.0",
   "dependencies": {
     "@waline/vercel": "1.19.3",
-    "think-model-mysql": "1.1.7"
-  }
+    "think-model-mysql": "1.1.7",
+    "@snyk/protect": "latest"
+  },
+  "scripts": {
+    "prepublish": "npm run snyk-protect",
+    "snyk-protect": "snyk-protect"
+  },
+  "snyk": true
 }
