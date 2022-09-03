@@ -2,7 +2,7 @@
   "name": "template",
   "version": "0.0.0",
   "dependencies": {
-    "@waline/vercel": "1.19.3",
+    "@waline/vercel": "1.19.4",
     "@snyk/protect": "latest"
   },
   "scripts": {
