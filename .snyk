@@ -1,0 +1,10 @@
+# Snyk (https://snyk.io) policy file, patches or ignores known vulnerabilities.
+version: v1.25.0
+ignore: {}
+# patches apply the minimum changes required to fix a vulnerability
+patch:
+  'npm:ms:20170412':
+    - '@waline/vercel > think-model-mysql2 > think-helper > ms':
+        patched: '2023-02-12T02:08:06.715Z'
+    - '@waline/vercel > think-model-mysql2 > think-model-abstract > think-helper > ms':
+        patched: '2023-02-12T02:08:06.715Z'
