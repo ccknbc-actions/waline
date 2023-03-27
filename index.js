@@ -27,6 +27,8 @@ module.exports = Waline({
     'gitlab.blog.ccknbc.cc',
     'ccknbc.github.io',
     'github.blog.ccknbc.cc',
+    'zeabur.blog.ccknbc.cc',
+    'blog-ccknbc.zeabur.app',
     'ccknbc.gitee.io',
     'blog.ccknbc.cc',
     'kotodama.yunyoujun.cn',
