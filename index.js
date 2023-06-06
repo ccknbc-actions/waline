@@ -47,8 +47,8 @@ module.exports = Waline({
       };
       const payload = {
         name: `${process.env.SITE_NAME} 评论通知`,
-        title: `${process.env.SITE_NAME} 上收到了来自 @${comment.nick} 的评论`,
-        message: `@${comment.nick} 说: ${comment.comment.slice(0, 50)}...`,
+        title: `${process.env.SITE_NAME} 上收到了来自 @${comment.nick} 的评论：`,
+        message: `${comment.comment.slice(0, 200)}...`,
         target_url: `${process.env.SITE_URL}${comment.url}#${comment.objectId}`,
         icon: process.env.WEBPUSHR_ICON,
         auto_hide: process.env.WEBPUSHR_AUTO_HIDE || "0",
