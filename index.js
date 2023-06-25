@@ -3,37 +3,22 @@ const axios = require('axios');
 
 module.exports = Waline({
   forbiddenWords: [
-    '习近平',
-    '毛泽东',
-    '快递',
-    '空包',
-    '代发',
-    '单号'
+    '习近平','毛泽东','快递','空包','代发','单号','机场','梯子','clash'
   ],
   disallowIPList: [
-    '220.173.125.83',
-    '222.83.150.92'
+    '220.173.125.83','222.83.150.92'
   ],
   secureDomains: [
-    'ccknbc.vercel.app',
-    'vercel.blog.ccknbc.cc',
-    'waline.ccknbc.ml',
+    'ccknbc.vercel.app','vercel.blog.ccknbc.cc',
     'waline.ccknbc.cc',
-    'ccknbc.netlify.app',
-    'netlify.blog.ccknbc.cc',
+    'ccknbc.netlify.app','netlify.blog.ccknbc.cc',
     'ccknbc.bitbucket.io',
-    'ccknbc.pages.dev',
-    'cloudflare.blog.ccknbc.cc',
-    'ccknbc.gitlab.io',
-    'gitlab.blog.ccknbc.cc',
-    'ccknbc.github.io',
-    'github.blog.ccknbc.cc',
-    'zeabur.blog.ccknbc.cc',
-    'blog-ccknbc.zeabur.app',
+    'ccknbc.pages.dev','cloudflare.blog.ccknbc.cc',
+    'ccknbc.gitlab.io','gitlab.blog.ccknbc.cc',
+    'ccknbc.github.io','github.blog.ccknbc.cc',
+    'zeabur.blog.ccknbc.cc','blog-ccknbc.zeabur.app',
     'ccknbc.gitee.io',
-    'blog.ccknbc.cc',
-    'kotodama.yunyoujun.cn',
-    'kotodama.elpsy.cn'
+    'blog.ccknbc.cc'
   ],
   async postSave(comment) {
     if(this.ctx.state.userInfo.type === 'administrator'){
