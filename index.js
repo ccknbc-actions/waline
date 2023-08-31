@@ -34,11 +34,11 @@ module.exports = Waline({
         name: `${process.env.SITE_NAME} 评论通知`,
         title: `${process.env.SITE_NAME} 上收到了来自 @${comment.nick} 的评论：`,
         message: `${comment.comment.slice(0, 200)}...`,
-        target_url: `${process.env.SITE_URL}${comment.url}#${comment.objectId}`,
+        target_url: `${process.env.SITE_URL}${comment.url}#post-comment`,
         icon: process.env.WEBPUSHR_ICON,
         auto_hide: process.env.WEBPUSHR_AUTO_HIDE || "0",
         expire_push: process.env.WEBPUSHR_EXPIRE_PUSH || "7d",
-        action_buttons: [ {"title": "前往查看", "url": `${process.env.SITE_URL}${comment.url}#${comment.objectId}`} ],
+        action_buttons: [ {"title": "前往查看", "url": `${process.env.SITE_URL}${comment.url}#post-comment`} ],
         segment: [ process.env.WEBPUSHR_SEGMENT ]
       };
       await axios.post(`https://api.webpushr.com/v1/notification/send/segment`, payload, { headers })
