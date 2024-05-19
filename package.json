@@ -3,6 +3,6 @@
   "version": "0.0.0",
   "dependencies": {
     "@waline/vercel": "1.31.14",
-    "axios": "1.6.8"
+    "axios": "1.7.0"
   }
 }
