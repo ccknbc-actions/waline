@@ -1,6 +1,20 @@
 const Waline = require('@waline/vercel');
 const axios = require('axios');
 
+const changeContent = content => {
+  if (content === '') return content;
+
+  content = content.replace(/<img.*?src="(.*?)"?[^\>]+>/ig, '[图片]'); // replace image link
+  content = content.replace(/<a[^>]+?href=["']?([^"']+)["']?[^>]*>([^<]+)<\/a>/gi, '[链接]'); // replace url
+  content = content.replace(/<pre><code>.*?<\/pre>/gi, '[代码]'); // replace code
+  content = content.replace(/<[^>]+>/g,""); // remove html tag
+
+  if (content.length > 150) {
+    content = content.substring(0,225) + '...';
+  }
+  return content;
+};
+
 module.exports = Waline({
   forbiddenWords: [
     '习近平','毛泽东','快递','空包','代发','单号','机场','梯子','clash'
@@ -33,7 +47,7 @@ module.exports = Waline({
       const payload = {
         name: `${process.env.SITE_NAME} 评论通知`,
         title: `${process.env.SITE_NAME} 上收到了来自 @${comment.nick} 的评论：`,
-        message: `${comment.comment.slice(0, 200)}...`,
+        message: changeContent(comment.comment),
         target_url: `${process.env.SITE_URL}${comment.url}#post-comment`,
         icon: process.env.WEBPUSHR_ICON,
         auto_hide: process.env.WEBPUSHR_AUTO_HIDE || "0",
