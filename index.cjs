@@ -15,7 +15,7 @@ const changeContent = content => {
   return content;
 };
 
-module.exports = Waline({
+module.exports = Application({
   forbiddenWords: [
     '习近平','毛泽东','快递','空包','代发','单号','机场','梯子','clash'
   ],
