@@ -2,7 +2,7 @@
   "name": "template",
   "version": "0.0.0",
   "dependencies": {
-    "@waline/vercel": "1.43.4",
+    "@waline/vercel": "1.43.5",
     "axios": "1.21.0"
   }
 }
